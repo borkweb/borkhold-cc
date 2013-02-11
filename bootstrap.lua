@@ -22,7 +22,6 @@ bootstrap.close()
 programs = {
 	"cobble",
   "cobble-transfer",
-  "startup"
 }
 
 -- Clear the screen and reset the cursor position
