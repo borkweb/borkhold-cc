@@ -90,17 +90,6 @@ function install(path)
   end
 end
 
-function configureStartup()
-  local hadStartup = fs.exists("/startup")
-
-  -- Clobber any previous startup script
-  if hadStartup then
-    fs.delete("/startup")
-  end
-
-  fs.copy("/borkhold/programs/startup", "/startup")
-end
-
 nextScreen()
 print("Starting installation...")
 print()
@@ -110,11 +99,6 @@ fs.makeDir("/borkhold/programs")
 for i = 1, #programs do
   install("programs/"..programs[i])
 end
-
--- Install the startup script, this ensures that
--- all the newly installed scripts and apis are
--- immidiately available
-configureStartup()
 
 print()
 print("Installation completed! Enjoy borkhold!")
