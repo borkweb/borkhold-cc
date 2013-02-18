@@ -21,7 +21,12 @@ bootstrap.close()
 -- by default.
 programs = {
 	"cobble",
-  "cobble-transfer",
+	"clay",
+	"clay-block",
+	"diamond"
+	"flint",
+	"gold",
+	"iron",
 }
 
 -- Clear the screen and reset the cursor position
