@@ -90,6 +90,30 @@ function install(path)
   end
 end
 
+function configureFactory()
+	local scripts = {
+		"flint",
+		"clay",
+		"clay-block",
+		"iron",
+		"gold",
+		"diamond"
+	}
+
+	local had = false
+
+	for i = 1, #scripts do
+		had = fs.exists("/" .. scripts[i])
+
+		-- Clobber any previous startup script
+		if had then
+			fs.delete("/" .. scripts[i])
+		end
+
+		fs.copy("/borkhold/programs/" .. scripts[i], "/" .. scripts[i])
+	end
+end
+
 nextScreen()
 print("Starting installation...")
 print()
