@@ -124,6 +124,8 @@ for i = 1, #programs do
   install("programs/"..programs[i])
 end
 
+configureFactory()
+
 print()
 print("Installation completed! Enjoy borkhold!")
 print()
