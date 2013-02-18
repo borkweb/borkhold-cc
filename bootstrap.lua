@@ -23,7 +23,7 @@ programs = {
 	"cobble",
 	"clay",
 	"clay-block",
-	"diamond"
+	"diamond",
 	"flint",
 	"gold",
 	"iron"
