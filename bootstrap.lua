@@ -26,7 +26,9 @@ programs = {
 	"diamond",
 	"flint",
 	"gold",
-	"iron"
+	"iron",
+	"up-front",
+	"down-front"
 }
 
 -- Clear the screen and reset the cursor position
