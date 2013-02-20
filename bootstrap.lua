@@ -97,7 +97,9 @@ function configureFactory()
 		"clay-block",
 		"iron",
 		"gold",
-		"diamond"
+		"diamond",
+		"down-front",
+		"up-front"
 	}
 
 	local had = false
