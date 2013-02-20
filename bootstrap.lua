@@ -28,7 +28,8 @@ programs = {
 	"gold",
 	"iron",
 	"up-front",
-	"down-front"
+	"down-front",
+	"down-up"
 }
 
 -- Clear the screen and reset the cursor position
@@ -101,7 +102,8 @@ function configureFactory()
 		"gold",
 		"diamond",
 		"down-front",
-		"up-front"
+		"up-front",
+		"down-up"
 	}
 
 	local had = false
