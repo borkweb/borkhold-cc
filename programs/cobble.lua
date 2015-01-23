@@ -10,5 +10,5 @@
 while true do
 	turtle.dig()
 	turtle.dropDown()
-	sleep(0.1)
+	sleep(0.2)
 end
